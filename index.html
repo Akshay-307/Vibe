@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <title>Vibe Music</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#004056",
+                        "on-background": "#ffffff",
+                        "on-error": "#450900",
+                        "on-surface-variant": "#adaaaa",
+                        "on-primary": "#640018",
+                        "surface-variant": "#262626",
+                        "error-container": "#b92902",
+                        "outline": "#777575",
+                        "tertiary-fixed": "#5ccafc",
+                        "on-tertiary-fixed": "#002939",
+                        "on-secondary-fixed": "#56007c",
+                        "background": "#0e0e0e",
+                        "on-secondary-fixed-variant": "#7d19ad",
+                        "tertiary-fixed-dim": "#4bbcee",
+                        "on-tertiary-fixed-variant": "#004962",
+                        "secondary-fixed-dim": "#e7afff",
+                        "surface-container-lowest": "#000000",
+                        "primary-fixed": "#ff7480",
+                        "error": "#ff7351",
+                        "tertiary-container": "#5ccafc",
+                        "secondary-fixed": "#eec2ff",
+                        "inverse-on-surface": "#565554",
+                        "surface-bright": "#2c2c2c",
+                        "surface-container": "#1a1919",
+                        "on-primary-container": "#4e0010",
+                        "inverse-surface": "#fcf8f8",
+                        "surface-tint": "#ff8c93",
+                        "surface-container-low": "#131313",
+                        "secondary-container": "#7508a5",
+                        "primary-fixed-dim": "#ff586b",
+                        "on-secondary-container": "#efc5ff",
+                        "on-primary-fixed": "#000000",
+                        "error-dim": "#d53d18",
+                        "surface": "#0e0e0e",
+                        "inverse-primary": "#bf0036",
+                        "surface-container-highest": "#262626",
+                        "primary": "#ff8c93",
+                        "surface-dim": "#0e0e0e",
+                        "secondary-dim": "#d277ff",
+                        "outline-variant": "#494847",
+                        "primary-dim": "#e51245",
+                        "tertiary": "#86d6ff",
+                        "on-secondary": "#380052",
+                        "primary-container": "#ff7480",
+                        "on-tertiary": "#004a63",
+                        "on-error-container": "#ffd2c8",
+                        "tertiary-dim": "#4bbcee",
+                        "surface-container-high": "#201f1f",
+                        "secondary": "#d277ff",
+                        "on-surface": "#ffffff",
+                        "on-primary-fixed-variant": "#600016"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+
+        .mesh-gradient {
+            background-color: #0e0e0e;
+            background-image:
+                radial-gradient(at 0% 0%, hsla(355, 30%, 20%, 0.4) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(27, 20%, 15%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, hsla(0, 0%, 40%, 0.15) 0px, transparent 50%);
+        }
+
+        .glass-panel {
+            background: rgba(26, 25, 25, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 140, 147, 0.3);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-background font-body selection:bg-primary/30 selection:text-primary overflow-x-hidden">
+    <!-- Header / Navigation -->
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-white/10 dark:bg-[#1a1919]/60 backdrop-blur-xl shadow-[0_40px_40px_-15px_rgba(210,119,255,0.08)]">
+        <div class="flex justify-between items-center px-8 py-4 w-full max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-black tracking-tighter text-white">Vibe</span>
+            </div>
+
+
+        </div>
+    </header>
+    <main class="mesh-gradient min-h-screen pt-32 pb-24 overflow-hidden">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Side: Expressive Headline & CTA -->
+            <div class="space-y-10 relative z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/10 text-xs font-medium tracking-widest uppercase text-tertiary">
+                    <span class="material-symbols-outlined text-[14px]">bolt</span>
+                    Ad-Free Streaming
+                </div>
+                <h1
+                    class="text-6xl md:text-8xl font-black font-headline tracking-tighter text-white leading-[0.9] text-glow">
+                    Your Music, <br />
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-secondary">Unbound.</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg md:text-xl max-w-lg leading-relaxed">
+                    Listen to millions of songs without interruptions. Download for offline playback, customize your
+                    sound, and enjoy an ad-free premium experience.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="vibe-latest.apk" download="vibe-latest.apk"
+                        class="bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-bold px-8 py-4 rounded-full flex items-center gap-3 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">download</span>
+                        Download Vibe
+                    </a>
+
+                </div>
+            </div>
+            <!-- Right Side: Floating UI Elements -->
+            <div class="relative min-h-[600px] flex items-center justify-center">
+                <!-- Decorative Glows -->
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full">
+                </div>
+                <!-- Floating Player Interface (Updated with Image 12) -->
+                <div
+                    class="absolute top-0 right-0 md:right-10 w-80 glass-panel rounded-[2rem] p-4 shadow-2xl transform rotate-3 z-30 border border-white/10 overflow-hidden">
+                    <div class="relative aspect-[1220/2620] w-full rounded-2xl overflow-hidden shadow-2xl bg-black">
+                        <img alt="Now Playing - The Box" class="w-full h-full object-cover" src="assets/screen.png" />
+                    </div>
+                </div>
+                <!-- Floating Search/Discover -->
+                <div
+                    class="absolute bottom-10 left-0 w-64 glass-panel rounded-2xl p-4 shadow-xl -rotate-6 z-20 border border-white/5">
+                    <div
+                        class="flex items-center gap-3 bg-surface-container-highest/50 rounded-xl px-3 py-2 text-sm text-white/40 mb-4">
+                        <span class="material-symbols-outlined text-sm">search</span>
+                        Search artists...
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-surface-container"></div>
+                            <div class="flex-1 space-y-1">
+                                <div class="h-2 w-2/3 bg-surface-variant rounded-full"></div>
+                                <div class="h-2 w-1/3 bg-surface-variant/40 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-surface-container"></div>
+                            <div class="flex-1 space-y-1">
+                                <div class="h-2 w-1/2 bg-surface-variant rounded-full"></div>
+                                <div class="h-2 w-1/4 bg-surface-variant/40 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating Visualizer -->
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-40 flex items-end justify-center gap-1.5 z-10 opacity-30">
+                    <div class="w-3 h-24 bg-primary/40 rounded-full"></div>
+                    <div class="w-3 h-32 bg-primary/60 rounded-full"></div>
+                    <div class="w-3 h-48 bg-primary rounded-full"></div>
+                    <div class="w-3 h-40 bg-secondary rounded-full"></div>
+                    <div class="w-3 h-28 bg-secondary/60 rounded-full"></div>
+                    <div class="w-3 h-36 bg-white/40 rounded-full"></div>
+                    <div class="w-3 h-20 bg-white/20 rounded-full"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Features Section -->
+        <section class="max-w-7xl mx-auto px-8 mt-40">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black font-headline tracking-tighter text-white mb-4">Core Features
+                </h2>
+                <div class="h-1 w-24 bg-gradient-to-r from-primary to-white mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Spec Card 1 -->
+                <div
+                    class="group surface-container-low p-8 rounded-3xl border border-white/5 transition-all hover:bg-surface-container-high hover:-translate-y-2">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-3xl">block</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Ad-Free Experience</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Enjoy your favorite tracks, albums, and playlists
+                        without any audio or visual interruptions.</p>
+                </div>
+                <!-- Spec Card 2 -->
+                <div
+                    class="group surface-container-low p-8 rounded-3xl border border-white/5 transition-all hover:bg-surface-container-high hover:-translate-y-2">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-3xl">offline_pin</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Offline Downloads</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Save any song directly to your device and listen
+                        to your library without an internet connection.</p>
+                </div>
+                <!-- Spec Card 3 -->
+                <div
+                    class="group surface-container-low p-8 rounded-3xl border border-white/5 transition-all hover:bg-surface-container-high hover:-translate-y-2">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-tertiary/10 flex items-center justify-center mb-6 text-tertiary group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-3xl">tune</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Audio Effects</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Take full control of your sound with a built-in
+                        equalizer, bass boost, and audio spatialization.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Dynamic Feature Grid (Bento) -->
+        <section class="max-w-7xl mx-auto px-8 mt-32">
+            <div class="grid grid-cols-1 md:grid-cols-12 grid-rows-2 gap-4 h-auto md:h-[600px]">
+                <div
+                    class="md:col-span-8 bg-surface-container-low rounded-3xl p-10 flex flex-col justify-between overflow-hidden relative border border-white/5">
+                    <div class="relative z-10 max-w-md">
+                        <h3 class="text-3xl font-black font-headline text-white mb-4">Premium Dark UI</h3>
+                        <p class="text-on-surface-variant">A fully customized glassmorphism interface that puts your
+                            music front and center. Easy on the eyes, smooth to navigate.</p>
+                    </div>
+                    <div
+                        class="absolute right-[-10%] bottom-[-10%] w-2/3 h-2/3 bg-gradient-to-br from-primary/10 to-white/5 blur-3xl rounded-full">
+                    </div>
+                </div>
+                <div
+                    class="md:col-span-4 bg-primary-container/20 rounded-3xl p-10 border border-primary/10 relative overflow-hidden flex flex-col items-center justify-center text-center">
+                    <span class="material-symbols-outlined text-6xl text-primary mb-4"
+                        style="font-variation-settings: 'FILL' 1;">cloud_queue</span>
+                    <h3 class="text-2xl font-bold text-white mb-2">Unlimited Music</h3>
+                    <p class="text-on-surface-variant text-sm">Access the entire music catalog for free.</p>
+                </div>
+                <div
+                    class="md:col-span-4 bg-surface-container-highest rounded-3xl p-10 border border-white/5 flex flex-col justify-end">
+                    <div
+                        class="w-12 h-12 bg-surface-variant rounded-xl mb-6 flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined">stay_current_portrait</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Background Play</h3>
+                    <p class="text-on-surface-variant text-sm">Keep the music going when your screen is off.</p>
+                </div>
+                <div class="md:col-span-8 bg-gradient-to-br from-[#1a1919] to-[#0e0e0e] rounded-3xl p-1 bg-white/5">
+                    <div class="w-full h-full bg-surface-container-low rounded-[1.4rem] p-10 flex items-center gap-10">
+                        <div class="flex-1">
+                            <h3 class="text-3xl font-black font-headline text-white mb-4">Seamless Playback</h3>
+                            <p class="text-on-surface-variant">Enjoy gapless transitions and use Smart Shuffle to
+                                automatically discover similar artists and tracks.</p>
+                        </div>
+                        <div
+                            class="hidden lg:block w-1/3 aspect-video bg-surface-container-highest rounded-2xl overflow-hidden shadow-2xl">
+                            <img alt="Live Music" class="w-full h-full object-cover grayscale opacity-50"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg1W7LEBcFNmuZPE-wgr2r2ApT42UlTXIHdpGN7nHKqMRsCXJvDxaDG5NE9yskkfJ4SnInWjG3ldcx-NoTnnynwGfYG0U1y6RlslHlKojCLYR8OIGMojIyjXzVVx3hk1qZGVF3jQsn7hURHulRHrsDfNEzcZRfkbg7Z2ruS7k5Ci56YJ8TwVmrqTgEQbzbhnTPi758YgvtsTMtzPHZaXaooQUGKoHbRSX3UJuU9xSEyQmfSp6IymX2mLw5agg2_T8FvpA6mJ0PnE0" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#0e0e0e] full-width py-12">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto space-y-4 md:space-y-0">
+            <div class="flex flex-col items-center md:items-start gap-1">
+                <span class="text-lg font-bold text-white/20">Vibe Music</span>
+                <p class="font-['Inter'] text-xs tracking-widest uppercase text-white/40">© 2026 Vibe Music. All rights
+                    reserved.</p>
+            </div>
+
+            <div class="flex gap-4">
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
